@@ -15,46 +15,24 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com/yourusername',
+    url: 'https://github.com/whosameni',
     icon: 'logo-github',
     color: '#333333',
-    username: '@yourusername',
+    username: '@whosameni',
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/yourusername',
+    url: 'https://linkedin.com/in/myles-annan',
     icon: 'logo-linkedin',
     color: '#0077B5',
-    username: 'Your Name',
-  },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/yourusername',
-    icon: 'logo-twitter',
-    color: '#1DA1F2',
-    username: '@yourusername',
+    username: 'Myles Annan',
   },
   {
     name: 'Email',
-    url: 'mailto:your.email@example.com',
     icon: 'mail',
     color: '#EA4335',
-    username: 'your.email@example.com',
-  },
-  {
-    name: 'Portfolio',
-    url: 'https://yourportfolio.com',
-    icon: 'globe',
-    color: colors.primary,
-    username: 'yourportfolio.com',
-  },
-  {
-    name: 'Medium',
-    url: 'https://medium.com/@yourusername',
-    icon: 'logo-medium',
-    color: '#00AB6C',
-    username: '@yourusername',
-  },
+    username: 'm_annan@rocketmail.com',
+  }
 ];
 
 const SocialLinksSection: React.FC = () => {

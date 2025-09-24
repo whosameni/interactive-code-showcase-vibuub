@@ -6,52 +6,21 @@ import Icon from './Icon';
 
 interface Skill {
   name: string;
-  level: 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
   icon: keyof typeof import('@expo/vector-icons').Ionicons.glyphMap;
 }
 
 const skills: Skill[] = [
-  { name: 'React Native', level: 'Advanced', icon: 'phone-portrait' },
-  { name: 'JavaScript', level: 'Advanced', icon: 'logo-javascript' },
-  { name: 'TypeScript', level: 'Intermediate', icon: 'code-slash' },
-  { name: 'React', level: 'Advanced', icon: 'logo-react' },
-  { name: 'Node.js', level: 'Intermediate', icon: 'logo-nodejs' },
-  { name: 'Python', level: 'Intermediate', icon: 'logo-python' },
-  { name: 'Git', level: 'Advanced', icon: 'git-branch' },
-  { name: 'UI/UX Design', level: 'Intermediate', icon: 'color-palette' },
+  { name: 'React Native', icon: 'phone-portrait' },
+  { name: 'JavaScript', icon: 'logo-javascript' },
+  { name: 'TypeScript', icon: 'code-slash' },
+  { name: 'React', icon: 'logo-react' },
+  { name: 'Node.js', icon: 'logo-nodejs' },
+  { name: 'Python', icon: 'logo-python' },
+  { name: 'Git', icon: 'git-branch' },
+  { name: 'UI/UX Design', icon: 'color-palette' },
 ];
 
 const SkillsSection: React.FC = () => {
-  const getLevelColor = (level: Skill['level']) => {
-    switch (level) {
-      case 'Expert':
-        return colors.success;
-      case 'Advanced':
-        return colors.primary;
-      case 'Intermediate':
-        return colors.warning;
-      case 'Beginner':
-        return colors.textSecondary;
-      default:
-        return colors.textSecondary;
-    }
-  };
-
-  const getLevelWidth = (level: Skill['level']) => {
-    switch (level) {
-      case 'Expert':
-        return '100%';
-      case 'Advanced':
-        return '80%';
-      case 'Intermediate':
-        return '60%';
-      case 'Beginner':
-        return '40%';
-      default:
-        return '40%';
-    }
-  };
-
   return (
     <View style={styles.container}>
       <View style={styles.sectionHeader}>
@@ -59,7 +28,7 @@ const SkillsSection: React.FC = () => {
           <View style={styles.sectionIndicator} />
           <View>
             <Text style={styles.sectionTitle}>Skills & Technologies</Text>
-            <Text style={styles.sectionSubtitle}>My technical expertise and proficiency levels</Text>
+            <Text style={styles.sectionSubtitle}>My technical expertise</Text>
           </View>
         </View>
       </View>
@@ -71,26 +40,7 @@ const SkillsSection: React.FC = () => {
               <View style={styles.skillIconContainer}>
                 <Icon name={skill.icon} size={24} color={colors.primary} />
               </View>
-              <View style={styles.skillInfo}>
-                <Text style={styles.skillName}>{skill.name}</Text>
-                <Text style={[styles.skillLevel, { color: getLevelColor(skill.level) }]}>
-                  {skill.level}
-                </Text>
-              </View>
-            </View>
-            
-            <View style={styles.progressContainer}>
-              <View style={styles.progressBackground}>
-                <View 
-                  style={[
-                    styles.progressFill, 
-                    { 
-                      width: getLevelWidth(skill.level),
-                      backgroundColor: getLevelColor(skill.level)
-                    }
-                  ]} 
-                />
-              </View>
+              <Text style={styles.skillName}>{skill.name}</Text>
             </View>
           </View>
         ))}
@@ -144,7 +94,6 @@ const styles = StyleSheet.create({
   skillHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 12,
   },
   skillIconContainer: {
     width: 40,
@@ -155,31 +104,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginRight: 12,
   },
-  skillInfo: {
-    flex: 1,
-  },
   skillName: {
     fontSize: 16,
     fontWeight: '600',
     color: colors.text,
-    marginBottom: 2,
-  },
-  skillLevel: {
-    fontSize: 12,
-    fontWeight: '500',
-  },
-  progressContainer: {
-    marginTop: 8,
-  },
-  progressBackground: {
-    height: 4,
-    backgroundColor: colors.border,
-    borderRadius: 2,
-    overflow: 'hidden',
-  },
-  progressFill: {
-    height: '100%',
-    borderRadius: 2,
+    flex: 1,
   },
 });
 
