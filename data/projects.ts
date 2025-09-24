@@ -40,9 +40,9 @@ export const projects: Project[] = [
     title: 'ShowCASE',
     description: 'A responsive mobile app that displays my projects with interactive pathways.',
     technologies: ['React Native, Expo'],
-    status: 'completed',
+    status: 'in-progress',
     category: 'mobile',
-    githubUrl: 'https://github.com/yourusername/weather-dashboard',
+    githubUrl: 'https://github.com/whosameni/interactive-code-showcase-vibuub',
     liveUrl: 'https://your-weather-dashboard.com',
     imageUrl: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=300&fit=crop',
     features: [

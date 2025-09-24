@@ -42,7 +42,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onExploreProjects }) => {
       </View>
       
       <Text style={styles.greeting}>Welcome! I'm Myles Annan!</Text>
-      <Text style={styles.title}>Building Experiences & Applicatioms </Text>
+      <Text style={styles.title}>Building Experiences & Applications </Text>
       <Text style={styles.subtitle}>
         I'm passionate about creating innovative solutions with modern technologies. 
         With this app, explore my projects to see what I've been working on/ have worked on!

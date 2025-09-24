@@ -6,6 +6,10 @@ import { router } from 'expo-router';
 import { colors, commonStyles } from '../styles/commonStyles';
 import HeroSection from '../components/HeroSection';
 import ProjectCard from '../components/ProjectCard';
+import SkillsSection from '../components/SkillsSection';
+import AboutMeSection from '../components/AboutMeSection';
+import ResumeSection from '../components/ResumeSection';
+import SocialLinksSection from '../components/SocialLinksSection';
 import { projects } from '../data/projects';
 
 export default function MainScreen() {
@@ -31,6 +35,10 @@ export default function MainScreen() {
       >
         <HeroSection onExploreProjects={handleExploreProjects} />
         
+        <AboutMeSection />
+        
+        <SkillsSection />
+        
         <View style={styles.featuredSection}>
           <View style={styles.sectionHeader}>
             <View style={styles.sectionTitleContainer}>
@@ -54,6 +62,10 @@ export default function MainScreen() {
             />
           ))}
         </View>
+
+        <ResumeSection />
+        
+        <SocialLinksSection />
 
         <View style={styles.bottomPadding} />
       </ScrollView>
