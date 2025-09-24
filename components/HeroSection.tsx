@@ -41,23 +41,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onExploreProjects }) => {
         <Icon name="code-slash" size={60} color={colors.primary} />
       </View>
       
-      <Text style={styles.greeting}>Hello, I'm a Developer</Text>
-      <Text style={styles.title}>Building Amazing Digital Experiences</Text>
+      <Text style={styles.greeting}>Welcome! I'm Myles Annan!</Text>
+      <Text style={styles.title}>Building Experiences & Applicatioms </Text>
       <Text style={styles.subtitle}>
-        Passionate about creating innovative solutions with modern technologies. 
-        Explore my projects to see what I've been working on.
+        I'm passionate about creating innovative solutions with modern technologies. 
+        With this app, explore my projects to see what I've been working on/ have worked on!
       </Text>
 
       <View style={styles.statsContainer}>
         <View style={styles.statItem}>
-          <Text style={styles.statNumber}>5+</Text>
+          <Text style={styles.statNumber}>3</Text>
           <Text style={styles.statLabel}>Projects</Text>
         </View>
-        <View style={styles.statDivider} />
-        <View style={styles.statItem}>
-          <Text style={styles.statNumber}>3+</Text>
-          <Text style={styles.statLabel}>Technologies</Text>
-        </View>
+    
         <View style={styles.statDivider} />
         <View style={styles.statItem}>
           <Text style={styles.statNumber}>2+</Text>

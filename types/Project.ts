@@ -5,7 +5,7 @@ export interface Project {
   description: string;
   technologies: string[];
   status: 'completed' | 'in-progress' | 'planned';
-  category: 'web' | 'mobile' | 'desktop' | 'api' | 'other';
+  category: 'Programs' | 'Mobile' | 'Desktop' | 'Api' | 'Other';
   githubUrl?: string;
   liveUrl?: string;
   imageUrl?: string;

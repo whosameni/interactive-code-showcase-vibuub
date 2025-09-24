@@ -4,100 +4,59 @@ import { Project, ProjectCategory } from '../types/Project';
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, product catalog, shopping cart, and payment integration.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Redux'],
+    title: 'Bus Ticketing System',
+    description: 'A C++ bus ticketing system that contains separate passenger and driver menus to manage bookings, routes, and buses. Features include user authentication, menu options, various routes, and payment integration.',
+    technologies: ['C++, Git'],
     status: 'completed',
-    category: 'web',
+    category: 'programs',
     githubUrl: 'https://github.com/yourusername/ecommerce-platform',
-    liveUrl: 'https://your-ecommerce-demo.com',
-    imageUrl: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop',
+    imageUrl: 'https://www.cttransit.com/sites/default/files/2023-08/New%20Haven%20BEB_2.jpg',
     features: [
       'User authentication & authorization',
-      'Product catalog with search & filters',
-      'Shopping cart & checkout process',
-      'Payment integration with Stripe',
-      'Admin dashboard for inventory management'
+      'Menu catalog for drivers & passengers',
+      'Creation and viewings of routes',
+      'Payment integration based off ticket',
     ],
-    createdAt: '2024-01-15'
+    createdAt: '2024-11-04'
   },
   {
     id: '2',
-    title: 'Task Management App',
-    description: 'A React Native mobile app for task management with real-time synchronization, offline support, and collaborative features.',
-    technologies: ['React Native', 'Firebase', 'TypeScript', 'Expo'],
+    title: 'Hospital Simulation System',
+    description: 'A C++ application that simulates all function of a hospital w/ doctors & patients. Features include  appointment scheduling, patient-detail retrieval, insurance verification, and validation.',
+    technologies: ['C++, Git'],
     status: 'completed',
-    category: 'mobile',
-    githubUrl: 'https://github.com/yourusername/task-manager',
-    imageUrl: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop',
+    category: 'programs',
+    githubUrl: 'https://bitbucket.org/2212demonq/final-project/src',
+    imageUrl: 'https://www.simovate.com/public/blog/what-is-hospital-simulation-and-why-is-it-important-6683f8660de3a.webp',
     features: [
-      'Create, edit, and delete tasks',
-      'Real-time synchronization across devices',
-      'Offline support with local storage',
-      'Team collaboration features',
-      'Push notifications for reminders'
+      'Create, modify, and delete patient appointments',
+      'Doctor, patient, nurse, & insurance authentication',
+      'Encrypted doctor & nurse login in information',
     ],
-    createdAt: '2024-02-20'
+    createdAt: '2024-12-01'
   },
   {
     id: '3',
-    title: 'Weather Dashboard',
-    description: 'A responsive web dashboard displaying weather data with interactive charts, forecasts, and location-based services.',
-    technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
+    title: 'ShowCASE',
+    description: 'A responsive mobile app that displays my projects with interactive pathways.',
+    technologies: ['React Native, Expo'],
     status: 'completed',
-    category: 'web',
+    category: 'mobile',
     githubUrl: 'https://github.com/yourusername/weather-dashboard',
     liveUrl: 'https://your-weather-dashboard.com',
     imageUrl: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=300&fit=crop',
     features: [
-      'Current weather conditions',
-      '7-day weather forecast',
-      'Interactive weather maps',
-      'Location-based weather data',
-      'Responsive design for all devices'
+      'Front page w/ introduction and appealing layout.',
+      'dedicated "Projects" section displaying projects with interactive elements.',
+      'simple navigation system to easily browse through your projects.',
     ],
-    createdAt: '2024-03-10'
-  },
-  {
-    id: '4',
-    title: 'AI Chat Bot',
-    description: 'An intelligent chatbot powered by machine learning, capable of natural language processing and contextual conversations.',
-    technologies: ['Python', 'TensorFlow', 'Flask', 'NLP', 'Docker'],
-    status: 'in-progress',
-    category: 'api',
-    githubUrl: 'https://github.com/yourusername/ai-chatbot',
-    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop',
-    features: [
-      'Natural language understanding',
-      'Context-aware conversations',
-      'Multi-language support',
-      'Integration with popular messaging platforms',
-      'Continuous learning capabilities'
-    ],
-    createdAt: '2024-04-05'
-  },
-  {
-    id: '5',
-    title: 'Portfolio Website',
-    description: 'A modern, responsive portfolio website built with Next.js, featuring smooth animations and optimized performance.',
-    technologies: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
-    status: 'planned',
-    category: 'web',
-    imageUrl: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop',
-    features: [
-      'Responsive design',
-      'Smooth animations',
-      'SEO optimized',
-      'Fast loading times',
-      'Contact form integration'
-    ],
-    createdAt: '2024-05-01'
+    createdAt: '2025-09-24'
   }
 ];
 
 export const categories: ProjectCategory[] = [
   { id: 'all', name: 'All Projects', icon: 'apps', count: projects.length },
-  { id: 'web', name: 'Web Apps', icon: 'globe', count: projects.filter(p => p.category === 'web').length },
+  { id: 'programs', name: 'Programs', icon: 'globe', count: projects.filter(p => p.category === 'programs').length },
   { id: 'mobile', name: 'Mobile Apps', icon: 'phone-portrait', count: projects.filter(p => p.category === 'mobile').length },
   { id: 'api', name: 'APIs & Backend', icon: 'server', count: projects.filter(p => p.category === 'api').length },
   { id: 'desktop', name: 'Desktop Apps', icon: 'desktop', count: projects.filter(p => p.category === 'desktop').length },

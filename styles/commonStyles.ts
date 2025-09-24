@@ -2,16 +2,16 @@
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
 export const colors = {
-  primary: '#2563eb',      // Modern blue
+  primary: '#3b82f6',      // Modern blue
   secondary: '#1e40af',    // Darker blue
-  accent: '#3b82f6',       // Light blue accent
-  background: '#ffffff',   // Clean white background
-  backgroundAlt: '#f8fafc', // Light gray background
-  text: '#1e293b',         // Dark gray text
-  textSecondary: '#64748b', // Medium gray text
-  grey: '#e2e8f0',         // Light gray
-  card: '#ffffff',         // White cards
-  border: '#e2e8f0',       // Light border
+  accent: '#60a5fa',       // Light blue accent
+  background: '#000000',   // Black background
+  backgroundAlt: '#111111', // Dark gray background
+  text: '#ffffff',         // White text
+  textSecondary: '#a1a1aa', // Light gray text
+  grey: '#374151',         // Dark gray
+  card: '#1a1a1a',         // Dark cards
+  border: '#374151',       // Dark border
   success: '#10b981',      // Green
   warning: '#f59e0b',      // Orange
   error: '#ef4444',        // Red
@@ -96,7 +96,7 @@ export const commonStyles = StyleSheet.create({
     padding: 20,
     marginVertical: 8,
     width: '100%',
-    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.05)',
+    boxShadow: '0px 4px 6px rgba(255, 255, 255, 0.05)',
     elevation: 2,
   },
   projectCard: {
@@ -105,7 +105,7 @@ export const commonStyles = StyleSheet.create({
     padding: 24,
     marginVertical: 12,
     width: '100%',
-    boxShadow: '0px 8px 25px rgba(0, 0, 0, 0.08)',
+    boxShadow: '0px 8px 25px rgba(255, 255, 255, 0.08)',
     elevation: 4,
     borderWidth: 1,
     borderColor: colors.border,
